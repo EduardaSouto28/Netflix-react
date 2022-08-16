@@ -16,10 +16,7 @@ function App() {
 
         <h1>Quem está assistindo?</h1>
         <ul>
-          <li>
-            <img src={perfil} className='perfil' alt='perfil'></img>
-            <p>Duka</p>
-          </li>
+
 
           <li>
             <img src={perfil} className='perfil' alt='perfil'></img>
