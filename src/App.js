@@ -1,23 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './logo.png';
+import perfil from './perfil.png';
+
+import './reset.css';
+import './index.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+      <header className="cabecalho">
+        <img src={logo} className="logo" alt="logo da netflix" />
       </header>
+
+      <main>
+
+        <h1>Quem está assistindo?</h1>
+        <ul>
+          <li>
+            <img src={perfil} className='perfil' alt='perfil'></img>
+            <p>Duka</p>
+          </li>
+
+          <li>
+            <img src={perfil} className='perfil' alt='perfil'></img>
+            <p>Laura</p>
+          </li>
+
+          <li>
+            <img src={perfil} className='perfil' alt='perfil'></img>
+            <p>Marcia</p>
+          </li>
+
+          <li>
+            <img src={perfil} className='perfil' alt='perfil'></img>
+            <p>Marcelo</p>
+          </li>
+        </ul>
+        <button>Gerenciar perfis</button>
+
+      </main>
+
     </div>
   );
 }
